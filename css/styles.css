@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.cover {
+  height: 80vh;
+  background-blend-mode: multiply;
+  background-image: url("../img/cover.png"), linear-gradient(90deg, #000000, rgba(0, 0, 0, 0));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10%;
+}
+#logo {
+  width: 5%;
+  filter: brightness(0) invert(1);
+}
+.heading {
+  font-family: 'Times New Roman', Times, serif;
+}
+.normal-text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cover-content p,
+h1 {
+  color: white;
+  margin: 2% 0 2% 0;
+}
+.cover-content h1 {
+  font-size: 3em;
+}
+.btn {
+  padding: 1%;
+  border: none;
+  text-transform: uppercase;
+}
+#exploreBtn {
+  color: white;
+  background-color: red;
+}
+#downloadBtn {
+  color: red;
+  background-color: white;
+  margin-left: 2%;
+}
+.main-heading {
+  color: black;
+  text-align: center;
+  position: relative;
+}
+.main-heading::after {
+  position: absolute;
+  left: calc(40%);
+  display: block;
+  width: 20%;
+  border-bottom: 2px solid red;
+  content: "";
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card-colored {
+  background-color: #f6f8fa;
+}
+.card-reversed {
+  flex-direction: row-reverse;
+}
+.card-content {
+  width: 40%;
+  padding: 5%;
+}
+.card-img {
+  width: 30%;
+  height: 100%;
+  object-fit: contain;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+footer {
+  background-color: #201e1b;
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
+@media only screen and (max-width: 768px) {
+  .cover {
+    height: 70vh;
+    padding-top: 20%;
+  }
+  #logo {
+    width: 20%;
+    height: auto;
+  }
+  .cover-content h1,
+  p {
+    padding-bottom: 2%;
+  }
+  .btn {
+    padding: 2%;
+  }
+  .card {
+    display: block;
+  }
+  .card-img {
+    width: 80%;
+    margin: auto;
+  }
+  .card-content {
+    width: 100%;
+  }
+}
